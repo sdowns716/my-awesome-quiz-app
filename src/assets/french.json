@@ -16,5 +16,14 @@
       {"value": "Tant pis", "correct": false},
       {"value": "Salut!", "correct": false}
     ]
+  },
+  {
+    "label": "What is Goodbye in french?",
+    "choices": [
+      {"value": "Au revoir", "correct": true},
+      {"value": "Bonjour", "correct": false},
+      {"value": "Tant pis", "correct": false},
+      {"value": "Salut!", "correct": false}
+    ]
   }
 ]
