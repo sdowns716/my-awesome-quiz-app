@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuestionsService } from '../questions.service';
 import { Quiz } from '../quiz.model';
-import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-welcome',
@@ -9,15 +8,17 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-  public quizzes: Quiz[];
+   quiz: Quiz[];
 
-  constructor(private questionsService: QuestionsService) {
-    questionsService.getQuizzes().subscribe((response) => {
-      this.quizzes = response;
+  constructor(public questionsService: QuestionsService) {}
+
+  ngOnInit() {
+    this.questionsService.getQuizzes().subscribe((quiz) => {
+      this.quiz = quiz;
     });
   }
 
-  ngOnInit(): void {
+  reset() {
+    this.quiz = undefined;
   }
-
 }
