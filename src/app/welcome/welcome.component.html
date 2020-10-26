@@ -1,1 +1,24 @@
 <p>welcome works!</p>
+<br />
+<br />
+<br />
+<div class="container jumbotron">
+  <h1 class="text-center">Choose a Quiz</h1>
+  <div class="container" *ngFor="let quiz of quizzes">
+    <mdb-card class="text-center">
+      <mdb-card-body>
+        <div class="col text-center">
+          <button
+            class="btn btn btn-outline-dark"
+            [routerLink]="['/', quiz.fileName]"
+          >
+            {{ quiz.label }}<br />
+          </button>
+        </div>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
+</div>
+<br />
+<br />
+<br />
