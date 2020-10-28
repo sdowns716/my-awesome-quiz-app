@@ -9,30 +9,39 @@
     ]
   },
   {
-    "label": "What is Hello in french?",
+    "label": "What is 'eat' in french?",
+    "choices": [
+      {"value": "manger", "correct": true},
+      {"value": "Bonjour", "correct": false},
+      {"value": "Tant pis", "correct": false},
+      {"value": "Salut!", "correct": false}
+    ]
+  },
+  {
+    "label": "What is 'dog' in french?",
     "choices": [
       {"value": "Au revoir", "correct": false},
-      {"value": "Bonjour", "correct": true},
-      {"value": "Tant pis", "correct": false},
-      {"value": "Salut!", "correct": false}
+      {"value": "Bonjour", "correct": false},
+      {"value": "chien", "correct": true},
+      {"value": "chat", "correct": false}
     ]
   },
   {
-    "label": "What is Goodbye in french?",
+    "label": "What is cat in french?",
     "choices": [
-      {"value": "Au revoir", "correct": true},
+      {"value": "Au revoir", "correct": false},
       {"value": "Bonjour", "correct": false},
-      {"value": "Tant pis", "correct": false},
-      {"value": "Salut!", "correct": false}
+      {"value": "chien", "correct": false},
+      {"value": "chat", "correct": true}
     ]
   },
   {
-    "label": "What is Goodbye in french?",
+    "label": "What is book in french?",
     "choices": [
-      {"value": "Au revoir", "correct": true},
-      {"value": "Bonjour", "correct": false},
-      {"value": "Tant pis", "correct": false},
-      {"value": "Salut!", "correct": false}
+      {"value": "livre", "correct": true},
+      {"value": "ordinateur", "correct": false},
+      {"value": "chien", "correct": false},
+      {"value": "chat", "correct": true}
     ]
   }
 ]
